@@ -1,6 +1,7 @@
 module Main exposing (..)
-import Html exposing (text, Html)
+import Html exposing (Html, text, div)
+import Html.Attributes exposing (class)
+import Components.ArticleList as ArticleList
 main : Html a
 main =
-  text "Hello Foo"
-  
+  div [ class "elm-app" ] [ ArticleList.view ]
